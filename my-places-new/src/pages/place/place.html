@@ -1,0 +1,16 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>place</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <sebm-google-map [latitude]="lat" [longitude]="lng">
+        <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+    </sebm-google-map>
+    <button ion-button color="dark" block round (click)="onDismiss()">Dismiss</button>
+
+</ion-content>
